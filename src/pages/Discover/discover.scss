@@ -15,5 +15,22 @@
 
         }
 
+        .cards{
+            display: flex;
+            gap: 12px;
+
+            .first{
+                flex: 2;
+            }
+            .second{
+                flex: 1;
+                .icon {
+                    border-color: #61534D;
+                }
+            }
+        }
+
+       
+
     }
 }
