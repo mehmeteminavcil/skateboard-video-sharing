@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import Card from "../../components/card/Card";
 import data from "../../data";
+import Smallcard from "../../components/smallCard/Smallcard";
 
 const Discover = () => {
   return (
@@ -26,6 +27,13 @@ const Discover = () => {
             />
           ))}
         </div>
+
+        <div className="secondTitle">
+          Most Watched
+        </div>
+
+        <Smallcard/>
+
       </div>
     </div>
   );
