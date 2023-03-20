@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: #353340;
+    height: 40px;
+    padding: 14px;
+    border-radius: 10px;
+    width: 60%;
+    color: #808191 ;
+    cursor: pointer;
+
+    input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: 100%;
+      color: #808191;
+
+      &::placeholder{
+        color: #808191;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .profileContainer {
+    display: flex;
+    align-items: center;
+    color: #808191 ;
+
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 12px;
+    }
+
+    .profileName{
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .notification{
+        position: relative;
+
+
+        .icon{
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+        .counter{
+            position: absolute;
+            top: 0;
+            right: 2px;
+            width: 7px;
+            height: 7px;
+            background-color: #ec5252;
+            border-radius: 50%;
+            border: 1px solid #1f1d2b;
+        }
+    }
+    
+  }
+}

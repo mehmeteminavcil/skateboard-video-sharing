@@ -1,8 +1,78 @@
 .sidebar {
-    
-    border: 1px solid red;
+    flex: 1;
+    padding: 38px 32px;
 
     .top{
 
+        margin-bottom: 40px;
+
+        .logo{
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+
+    .center{
+        .title{
+            font-size: 11px;
+            color: #808191;
+            font-weight: 600;
+            opacity: 0.7;
+            margin-bottom: 24px;
+        }
+
+        ul {
+            
+            list-style: none;
+            
+            li{
+                display: flex;
+                align-items: center;
+                margin-bottom: 32px;
+                gap: 16px;
+                cursor: pointer;
+
+                .icon{
+                  font-size: 32px;
+                  padding: 6px;
+                  color: #808191;
+                  background-color: #353340;
+                  border-radius: 12px;
+                
+
+                }
+
+                span{
+                    color: #808191;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+
+                &:hover .icon {
+                    color: #fff;
+                    background-color:#ff7551 ;
+                }
+                &:hover span {
+                    color: #fff;
+                    
+                }
+
+                &.active  .icon{
+                    color: #fff;
+                    background-color:#ff7551 ;
+                }
+                &.active  span{
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    hr{
+        border: 0.5px solid #34373c;
+        margin-top: 28px;
+        margin-bottom: 28px;
     }
 }

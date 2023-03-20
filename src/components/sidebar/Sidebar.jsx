@@ -17,9 +17,9 @@ const Sidebar = () => {
         </div>
         <div className="center">
             <ul>
-                <p>MENU</p>
-                <li>
-                    <HomeRoundedIcon className="icon" />
+                <p className="title">MENU</p>
+                <li className="active">
+                    <HomeRoundedIcon className="icon active" />
                     <span>Discover</span>
                 </li>
                 <li>
@@ -39,7 +39,7 @@ const Sidebar = () => {
                     <span>Bookmark</span>
                 </li>
                 <hr />
-                <p>CATEGORY</p>
+                <p className="title">CATEGORY</p>
                 <li>
                     <SendTimeExtensionRoundedIcon className="icon" />
                     <span>Live Stream</span>
@@ -57,6 +57,7 @@ const Sidebar = () => {
                     <span>Comunity</span>
                 </li>
             </ul>
+            <hr/>
         </div>
         <div className="bottom">
             <span>night mode</span>
