@@ -1,0 +1,23 @@
+.single {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .singleContainer {
+    flex: 6;
+    padding: 28px;
+
+    .left {
+        display: flex;
+        margin-top: 20px;
+        gap: 20px;
+      .videoContainer {
+        flex: 2;
+      }
+
+      .right {
+        flex: 1;
+      }
+    }
+  }
+}

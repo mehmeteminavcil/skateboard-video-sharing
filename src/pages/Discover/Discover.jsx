@@ -4,6 +4,8 @@ import Navbar from "../../components/navbar/Navbar";
 import Card from "../../components/card/Card";
 import { data, videoData } from "../../data";
 import VideoCard from "../../components/videCard/VideoCard";
+
+import { Link } from "react-router-dom";
 const Discover = () => {
   return (
     <div className="discover">
@@ -31,15 +33,17 @@ const Discover = () => {
 
         <div className="videoCards">
           {videoData.map((video) => (
-            <VideoCard 
-            cardTitle={video.cardTitle}
-            videoSrc={video.videoSrc}
-            authorName={video.authorName}
-            authorImg={video.authorImg}
-            authorInfo={video.authorInfo}
-            cardTime={video.cardTime}
-            isOnline={video.isOnline ? "online" : "offline" }
-            />
+            <Link to={"/users/" + video.id}>
+              <VideoCard
+                cardTitle={video.cardTitle}
+                videoSrc={video.videoSrc}
+                authorName={video.authorName}
+                authorImg={video.authorImg}
+                authorInfo={video.authorInfo}
+                cardTime={video.cardTime}
+                isOnline={video.isOnline ? "online" : "offline"}
+              />
+            </Link>
           ))}
         </div>
       </div>
@@ -48,4 +52,3 @@ const Discover = () => {
 };
 
 export default Discover;
-

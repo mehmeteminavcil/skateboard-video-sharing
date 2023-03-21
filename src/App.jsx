@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Discover from "./pages/Discover/Discover"
-import Trending from "./pages/Trending/Trending";
+import Discover from "./pages/discover/Discover"
+import Single from "./pages/single/Single";
 
 function App() {
 
@@ -10,7 +10,9 @@ function App() {
         <Routes>
           <Route path="/">
             <Route index element={<Discover/> } />
-            <Route path="trending"  element={<Trending/>}/>
+            <Route path="users">
+              <Route path=":userId" element={<Single/>}/>
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>
