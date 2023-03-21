@@ -1,0 +1,114 @@
+.smallCard {
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  background-color: #252836;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover .cardTime,
+  &:hover .authorName {
+    opacity: 0;
+  }
+
+  &:hover .top {
+    height: 210px;
+  }
+
+  &:hover .authorImg {
+    transform: scale(0.7) translateX(20px);
+  }
+
+  .cardTime {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 8px;
+    background-color: #24273085;
+    border-radius: 7px;
+    z-index: 99;
+    transition: all 0.5s ease;
+  }
+
+  .top {
+    position: absolute;
+    height: 160px;
+    transition: all 0.5s ease;
+
+    .authorAvatar {
+      position: absolute;
+      right: 0;
+      .authorImg {
+        position: relative;
+        bottom: 40px;
+        right: 10px;
+        display: flex;
+        width: 64px;
+        transition: all 0.5s ease;
+
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 1px solid #c4c4c4;
+          padding: 4px;
+        }
+        .icon {
+          position: absolute;
+          bottom: 4px;
+          right: 0px;
+          width: 16px;
+          height: 16px;
+          color: #ffffff;
+          background-color: #08a0f7;
+          border-radius: 50%;
+          padding: 2px;
+          border: 2px solid #252836;
+        }
+      }
+    }
+  }
+  .bottom {
+    padding-left: 20px;
+    margin-top: 180px;
+    margin-bottom: 22px;
+
+    .authorName {
+      font-size: 13px;
+      font-weight: 400;
+      color: #b7b9d2;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 12px;
+      transition: all 0.5s ease;
+
+      .onlineStatus {
+        width: 7px;
+        height: 7px;
+        background-color: #22b07d;
+        border-radius: 50%;
+        margin-left: 8px;
+      }
+    }
+
+    .cardTitle {
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .authorInfo {
+      font-size: 12px;
+      font-weight: 400;
+      color: #808191;
+    }
+  }
+}
