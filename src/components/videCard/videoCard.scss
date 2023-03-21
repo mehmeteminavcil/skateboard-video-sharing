@@ -1,5 +1,5 @@
 .videoCard {
-  max-width: 260px;
+  min-width: 260px;
   display: flex;
   flex-direction: column;
   background-color: #252836;
@@ -76,6 +76,7 @@
   }
   .bottom {
     padding-left: 20px;
+    padding-right: 20px;
     margin-top: 180px;
     margin-bottom: 22px;
 
@@ -89,13 +90,7 @@
       margin-bottom: 12px;
       transition: all 0.5s ease;
 
-      .onlineStatus {
-        width: 7px;
-        height: 7px;
-        background-color: #22b07d;
-        border-radius: 50%;
-        margin-left: 8px;
-      }
+      
     }
 
     .cardTitle {
@@ -110,5 +105,22 @@
       font-weight: 400;
       color: #808191;
     }
+  }
+
+
+  .online {
+    width: 7px;
+    height: 7px;
+    background-color: #22b07d;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+
+  .offline{
+    width: 7px;
+    height: 7px;
+    background-color: #b02222;
+    border-radius: 50%;
+    margin-left: 8px;
   }
 }
