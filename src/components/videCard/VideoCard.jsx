@@ -1,10 +1,10 @@
-import "./smallcard.scss";
+import "./videoCard.scss";
 import Video from "../video/Video";
 import CheckRoundedIcon from "@mui/icons-material/CheckRounded";
 
-const SmallCard = ({ videoSrc }) => {
+const VideoCard = ({ videoSrc }) => {
   return (
-    <div className="smallCard">
+    <div className="videoCard">
       <div className="cardTime">7 min</div>
       <div className="top">
         <Video videoSrc={videoSrc} />
@@ -33,4 +33,4 @@ const SmallCard = ({ videoSrc }) => {
   );
 };
 
-export default SmallCard;
+export default VideoCard;
