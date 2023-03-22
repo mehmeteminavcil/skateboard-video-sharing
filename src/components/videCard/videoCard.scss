@@ -1,12 +1,16 @@
 .videoCard {
-  min-width: 260px;
   display: flex;
+  flex: 1;
+  max-width: 266px;
   flex-direction: column;
   background-color: #252836;
   border-radius: 20px;
   position: relative;
+  
   overflow: hidden;
   cursor: pointer;
+
+ 
 
   &:hover .cardTime,
   &:hover .authorName {
@@ -37,6 +41,7 @@
 
   .top {
     position: absolute;
+    width: 100%;
     height: 160px;
     transition: all 0.5s ease;
 

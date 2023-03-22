@@ -1,22 +1,19 @@
-import "./video.scss"
-import HoverVideoPlayer from 'react-hover-video-player';
+import "./video.scss";
+import HoverVideoPlayer from "react-hover-video-player";
 
-
-const Video = ({videoSrc}) => {
+const Video = ({ videoSrc }) => {
   return (
     <HoverVideoPlayer
-    className="videoContainer"
-    videoSrc={videoSrc}
-   
+      className="videoContainer"
+      videoSrc={videoSrc}
+      videoClassName="player-video"
+      loadingOverlay={
+        <div className="loading-overlay">
+          <div className="loading-spinner" />
+        </div>
+      }
+    />
+  );
+};
 
-    videoClassName="player-video"
-    loadingOverlay={
-      <div className="loading-overlay">
-        <div className="loading-spinner" />
-      </div>
-    }
-  />
-  )
-}
-
-export default Video
+export default Video;

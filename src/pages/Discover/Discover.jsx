@@ -33,8 +33,9 @@ const Discover = () => {
 
         <div className="videoCards">
           {videoData.map((video) => (
-            <Link to={"/users/" + video.id}>
+            <Link to={"/users/" + video.id} key={video.id}>
               <VideoCard
+                key={video.id}
                 cardTitle={video.cardTitle}
                 videoSrc={video.videoSrc}
                 authorName={video.authorName}
